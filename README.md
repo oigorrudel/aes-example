@@ -21,15 +21,3 @@ Este projeto tem como objetivo ilustrar como usar o algoritmo AES para:
 - Base64 para codificação de dados criptografados
 
 ---
-
-## Como Usar
-
-### 1. Gerar / configurar uma chave AES
-
-Você pode gerar uma chave AES no Java usando `KeyGenerator`:
-
-```java
-KeyGenerator keyGen = KeyGenerator.getInstance("AES");
-keyGen.init(128); // ou 192, 256 (depende da política de criptografia)
-SecretKey secretKey = keyGen.generateKey();
-```
